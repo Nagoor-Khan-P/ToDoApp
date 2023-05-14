@@ -14,6 +14,7 @@ body{
 .center-container{
   height: 500px;
   width: 350px;
+
 }
 .app-heading{
   padding: 4px;
@@ -26,6 +27,7 @@ body{
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
+  margin-top: 200px;
 }
 .input-box-todo{
   margin-left: 10px;
@@ -79,6 +81,10 @@ body{
 .icons{
   position: absolute;
   right: 10px;
+  color: #40ee60;
+}
+.icons:hover{
+  display: inline;
 }
 .icons i{
   margin: 4px;
@@ -91,4 +97,14 @@ body{
 }
 .icon-delete:hover{
   color: red;
+}
+
+.cancel-icon {
+  display: none;
+  margin-left: 280px;
+}
+
+.list-item:hover .cancel-icon {
+  display: inline;
+  color: #40ee60
 }
