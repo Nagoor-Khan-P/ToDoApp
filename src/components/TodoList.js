@@ -4,7 +4,10 @@ function TodoList(props) {
   return (
     <div>
         <li className="list-item">
-        Task 1 <span class="cancel-icon">X</span>
+        {props.item} 
+        <span class="cancel-icon"><i class="fa-sharp fa-solid fa-xmark" onClick={e=>{
+            props.deleteItem(props.index)
+        }}></i></span>
         </li>
     </div>
   )
