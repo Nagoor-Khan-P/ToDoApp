@@ -19,8 +19,7 @@ function App() {
   return (
     <div className="main-container">
       <div className="center-container">
-        <h1 className="app-heading">ToDo List</h1>
-        <hr/>
+        <h1 className="app-heading">Todo</h1>
         {todoList.map((listItem, i)=>{
           return(<TodoList key={i} index={i} item={listItem} deleteItem={deleteListItem}/>)
         })}
